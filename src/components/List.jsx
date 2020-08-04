@@ -1,14 +1,13 @@
 import React from 'react'
 import remove from '../remove.svg'
+import '../list.css'
 
 const List = ({ item, deleteItem }) => {
   console.log(item)
   return (
     <div className='toDolist-item'>
       <p>{item.toDoItem}</p>
-      <button>
-        <img src={remove} alt='' onClick={() => deleteItem(item.id)} />
-      </button>
+      <img src={remove} alt='' onClick={() => deleteItem(item.id)} />
     </div>
   )
 }

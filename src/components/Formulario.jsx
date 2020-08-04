@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react'
+import '../formulario.css'
 const Formulario = ({ createToDoItem }) => {
   //State toDOItem
   const [item, updateItem] = useState({
@@ -37,7 +38,7 @@ const Formulario = ({ createToDoItem }) => {
   return (
     <Fragment>
       {error ? <p className='alerta-error'>Ingresa una tarea</p> : null}
-      <form onSubmit={submitItem}>
+      <form className='submitText' onSubmit={submitItem}>
         <input
           type='text'
           name='toDoItem'
