@@ -3,11 +3,11 @@ import remove from '../../remove.svg'
 import './style.css'
 
 const List = ({ item, deleteItem }) => {
-  console.log(item)
+  const { toDoItem, id } = item
   return (
     <div className='toDolist-item'>
-      <p>{item.toDoItem}</p>
-      <img src={remove} alt='' onClick={() => deleteItem(item.id)} />
+      <p>{toDoItem}</p>
+      <img src={remove} alt='' onClick={() => deleteItem(id)} />
     </div>
   )
 }

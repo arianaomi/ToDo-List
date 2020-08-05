@@ -1,13 +1,17 @@
 //
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import './style.css'
+
 const Formulario = ({ createToDoItem }) => {
   //State toDOItem
   const [item, updateItem] = useState({
     toDoItem: '',
   })
+
+  //State error true|false
   const [error, updateError] = useState(false)
-  //
+
+  //Modificando state
   const updateState = event => {
     updateItem({
       ...item,
@@ -15,29 +19,27 @@ const Formulario = ({ createToDoItem }) => {
     })
     console.log('escribiendo')
   }
-  //
 
+  //Funcion de evento
   const submitItem = event => {
     event.preventDefault()
-    console.log(item.toDoItem)
-    //Validando conntenido
+    //Validando contenido y actualizando state de error
     if (item.toDoItem.trim() === '') {
       updateError(true)
       return
     }
+
     updateError(false)
-
     item.id = Date.now()
-
     createToDoItem(item)
-
+    //Limpiando input
     updateItem({
       toDoItem: '',
     })
   }
-  //
+
   return (
-    <Fragment>
+    <>
       {error ? <p className='alerta-error'>Ingresa una tarea</p> : null}
       <form className='submitText' onSubmit={submitItem}>
         <input
@@ -49,7 +51,7 @@ const Formulario = ({ createToDoItem }) => {
         />
         <button type='submit'>Agregar</button>
       </form>
-    </Fragment>
+    </>
   )
 }
 
