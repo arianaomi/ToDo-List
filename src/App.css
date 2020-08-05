@@ -1,0 +1,37 @@
+#logoText {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+#logoText img {
+  width: 10%;
+}
+.list {
+  background-color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.byIronBit {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #adff2e;
+  height: 50px;
+  border-radius: 5px;
+}
+.byIronBit p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.byIronBit img {
+  width: 30px;
+}
+
+.itemsList p {
+  padding-bottom: 20px;
+}

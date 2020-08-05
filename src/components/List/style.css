@@ -1,0 +1,15 @@
+.toDolist-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.toDolist-item img {
+  width: 30px;
+}
+.toDolist-item p {
+  white-space: pre-wrap;
+  text-overflow: unset;
+  word-break: break-word;
+  padding-right: 50px;
+  text-align: justify;
+}

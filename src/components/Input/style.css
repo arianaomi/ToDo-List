@@ -1,0 +1,36 @@
+.submitText {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submitText input {
+  background-color: rgba(245, 245, 245, 0.009);
+  border: 0;
+  border-bottom: 3px solid white;
+  width: 50%;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.submitText button {
+  height: 55px;
+  width: 150px;
+  margin-left: 20px;
+  border: 0;
+  color: whitesmoke;
+  font-weight: 800;
+  background-color: #23b2a9;
+  cursor: pointer;
+}
+
+.alerta-error {
+  background-color: whitesmoke;
+  color: red;
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
