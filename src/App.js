@@ -2,8 +2,9 @@ import React, { Fragment, useState, useEffect } from 'react'
 import logo from './ico-logo.png'
 import recycle from './recycle.svg'
 import './App.css'
-import Formulario from './components/Formulario'
-import List from './components/List'
+//* Components
+import Input from './components/Input/index'
+import List from './components/List/index'
 
 function App() {
   let initialItems = JSON.parse(localStorage.getItem('items'))
@@ -50,7 +51,7 @@ function App() {
           <h1>Frontend Test</h1>
         </div>
       </header>
-      <Formulario createToDoItem={createToDoItem} />
+      <Input createToDoItem={createToDoItem} />
       <div className='list'>
         <div className='byIronBit'>
           <p>ToDo list by Iron Bit</p>

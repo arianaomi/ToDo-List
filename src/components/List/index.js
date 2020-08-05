@@ -1,6 +1,6 @@
 import React from 'react'
-import remove from '../remove.svg'
-import '../list.css'
+import remove from '../../remove.svg'
+import './style.css'
 
 const List = ({ item, deleteItem }) => {
   console.log(item)

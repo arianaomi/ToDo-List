@@ -1,5 +1,6 @@
+//
 import React, { Fragment, useState } from 'react'
-import '../formulario.css'
+import './style.css'
 const Formulario = ({ createToDoItem }) => {
   //State toDOItem
   const [item, updateItem] = useState({
